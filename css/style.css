@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Applying Montserrat font globally */
+}
+
+header {
+    background-color: #e0e0e0; /* Lighter grey background */
+    color: #333;
+    padding: 1rem;
+    position: relative; /* Needed for absolute positioning of logo and top menu */
+}
+
+.top-menu ul {
+    position: absolute;
+    right: 25px; /* Adjusted for space next to the logo */
+    top: 15px;
+    list-style: none;
+}
+
+.top-menu ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: lighter;
+    font-size: 13px;
+    padding: 0.5rem;
+    /* background-color: #f0f0f0; Lighter grey for contrast */
+    border-radius: 5px;
+}
+
+/* .logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo {
+    height: 30px;
+} */
+
+.header-title {
+    text-align: center;
+    font-size: 70px;
+    margin: 30px 0 30px; /* Added more space above and below the title */
+}
+
+.header-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #555;
+    color: #ffd700;
+}
+
+.depth2 {
+    display: none; /* Start hidden */
+    position: absolute;
+    left: 0; /* Aligns the submenu directly under the parent li */
+    top: 100%;
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 100%; /* Optional: Match the width to the parent li */
+    text-align: center;
+}
+
+.depth2 li {
+    display: block; /* This makes each submenu item stack vertically */
+    margin: 0;
+}
+
+.depth2 a {
+    background-color: transparent;
+    color: #fff; /* Ensuring text is white for visibility */
+    padding: 8px 20px; /* Provide sufficient padding */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Makes the link fill the li for better click area */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.depth2 a:hover {
+    background-color: #fff; /* Darker background on hover for visual feedback */
+    color: #444;
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
