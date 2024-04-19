@@ -2,32 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="Description" content="CSE110-lab2: Meeting Minutes" >
-    <meta name="Keywords" content="CSE110-lab2-JWH" >
-    <link rel="icon" type="image/x-icon" href="https://rabonghan.github.io/cse110-lab2/images/favicon.ico" >
-    <title>Jover First Meeting</title>
+    <meta name="Description" content="Team Jover" >
+    <meta name="Keywords" content="CSE110-lab-JWH" >
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Team Jover</title>
   </head>
   <body>
     <header>
-        <h1><a href="/">Team Jover</a></h1>
-        <span>
-            <b>April 15, 2024</b>
-        </span>
-        <hr>
-        <div>
-            <h3>Contents of the Meeting Minutes</h3>
-        </div>
-        <nav>
+        <div class="top-menu">
             <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#attendance">Attendance List</a></li>
-                <li><a href="#brainstorm">Brainstorming</a></li>
-                <li><a href="#document">Documentations</a></li>
-                <li><a href="#contact">Contacts</a></li>
-                <li><a href="#question">Question/Appointment</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="html/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <!-- <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Team Logo" class="logo">
+            </a>
+        </div> -->
+        <h1 class="header-title"><a href="index.html">Team Jover</a></h1>
+        <nav>
+            <ul class="clear">
+                <li><a href="#" class="wf">Team Intro</a></li>
+                <li>
+                    <a href="#" class="wf" id="meetingNotesToggle">Meeting Notes</a>
+                    <ul class="depth2" id="meetingSubMenu">
+                        <li><a href="#">April</a></li>
+                        <li><a href="#">May</a></li>
+                        <li><a href="#">June</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="wf">Contacts</a></li>
             </ul>
         </nav>
     </header>
+    <script>
+    document.getElementById('meetingNotesToggle').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the link from causing a page reload
+        var submenu = document.getElementById('meetingSubMenu');
+        if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+        } else {
+            submenu.style.display = 'block';
+        }
+    });
+    </script>
     <hr>
     <main>
         <section id="intro">

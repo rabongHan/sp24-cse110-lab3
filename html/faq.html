@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Team Jover" >
+    <meta name="Keywords" content="CSE110-lab-JWH" >
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/faq.css" type="text/css">
+    <title>Team Jover</title>
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <h1 class="header-title"><a href="../index.html">Team Jover</a></h1>
+    </header>
+    <section id="contact-form">
+        <div class="form-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <form>
+                <fieldset>
+                    <legend>Form</legend>
+                    Name: <input type="text" name="name"><br>
+                    <label><input type='radio' name='ucsd' value='ucsd'> UCSD</label>
+                    <label><input type='radio' name='ucsd' value='non-ucsd'> Non-UCSD</label><br>
+                    Major: <input list="major" name="major">
+                    <datalist id="major">
+                        <option value="CS"></option>
+                        <option value="MATH/CS"></option>
+                        <option value="CE"></option>
+                        <option value="ECE"></option>
+                        <option value="MATH"></option>
+                    </datalist><br>
+                    Email: <input type="email" name="email"><br>
+                    Content: <textarea rows="5"></textarea><br>
+                    Subscribe: <input type="checkbox"><br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="form-section">
+            <h2 class="section-title">Book an Appointment</h2>
+            <form>
+                Name: <input type="text" name="name"><br>
+                <label><input type='radio' name='ucsd' value='ucsd'> UCSD</label>
+                <label><input type='radio' name='ucsd' value='non-ucsd'> Non-UCSD</label><br>
+                Major: <input list="major" name="major"><br>
+                Email: <input type="email" name="email"><br>
+                Date: <input type="date" value="2024-04-16"><br>
+                Purpose: 
+                <select name="purpose">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Advising">Advising</option>
+                    <option value="Team">Team Join</option>
+                    <option value="Project">Project Join</option>
+                    <option value="General">General Questions</option>
+                    <option value="MeetingScheduling">Meeting Scheduling (only for Team Members)</option>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <address>
+        © 2024 Team Jover - Jaewon Han
+        <a href="mailto:jah034@ucsd.edu">jah034@ucsd.edu</a>
+    </address>
+</body>
+</html>
