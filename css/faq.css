@@ -3,19 +3,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; /* Applying Montserrat font globally */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 header {
-    background-color: #e0e0e0; /* Lighter grey background */
+    background-color: #e0e0e0; 
     color: #333;
     padding: 1rem;
-    position: relative; /* Needed for absolute positioning of logo and top menu */
+    position: relative; 
+}
+
+footer {
+    background-color: white; 
+    padding: 20px 40px; 
+    text-align: center; 
+    border-top: 1px solid #dee2e6; 
+    color: #495057; 
+    font-size: 14px; 
+    height: 120px;
+}
+
+footer a {
+    color: hsl(233, 18%, 61%); 
+    text-decoration: none; 
 }
 
 .top-menu ul {
     position: absolute;
-    right: 25px; /* Adjusted for space next to the logo */
+    right: 25px;
     top: 15px;
     list-style: none;
 }
@@ -31,24 +46,13 @@ header {
     font-weight: lighter;
     font-size: 13px;
     padding: 0.5rem;
-    /* background-color: #f0f0f0; Lighter grey for contrast */
     border-radius: 5px;
 }
-
-/* .logo-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.logo {
-    height: 30px;
-} */
 
 .header-title {
     text-align: center;
     font-size: 70px;
-    margin: 30px 0 30px; /* Added more space above and below the title */
+    margin: 30px 0 30px; 
 }
 
 .header-title a {
@@ -64,52 +68,50 @@ header {
 /* ---------------------------------------------- */
 
 .form-section {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* subtle border */
+    border: 1px solid #ddd; 
 }
 
-/* Section titles for emphasis and cool appearance */
 .section-title {
     font-size: 2rem;
-    color: #0056b3; /* Deep blue for a professional look */
+    color: #0056b3; 
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 700; /* Bold font weight for titles */
+    font-weight: 700; 
     padding-bottom: 10px;
-    border-bottom: 2px solid #f0f0f0; /* Underline effect */
+    border-bottom: 2px solid #f0f0f0; 
 }
 
-/* Stylish form fields */
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc; /* Subtle border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Inner shadow for depth */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for interaction */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #0056b3; /* Highlight focus with blue */
-    box-shadow: 0 0 8px rgba(0, 86, 179, 0.2); /* Glowing effect */
+    border-color: #0056b3; 
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.2); 
 }
 
-/* Enhanced checkboxes and radio buttons for a modern look */
+
 input[type="checkbox"],
 input[type="radio"] {
     appearance: none;
-    background-color: #f2f2f2; /* Light grey background */
+    background-color: #f2f2f2; 
     margin: 10px 5px 0 0;
     padding: 10px;
     border: 2px solid #ccc;
@@ -117,13 +119,13 @@ input[type="radio"] {
 }
 
 input[type="radio"] {
-    border-radius: 50%; /* Circular radio buttons */
+    border-radius: 50%; 
 }
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-    background-color: #0056b3; /* Blue background for checked state */
-    border-color: #004494; /* Darker blue border for checked state */
+    background-color: #0056b3; 
+    border-color: #004494; 
 }
 
 input[type="radio"]:checked::after {
@@ -137,9 +139,8 @@ input[type="radio"]:checked::after {
     position: relative;
 }
 
-/* Stylish submit buttons */
 button {
-    background-color: #0056b3; /* Blue background */
+    background-color: #0056b3; 
     color: white;
     padding: 10px 15px;
     font-size: 1rem;
@@ -150,14 +151,13 @@ button {
 }
 
 button:hover {
-    background-color: #004494; /* Darker blue on hover */
+    background-color: #004494; 
 }
 
-/* Enhanced calendar input styling */
 input[type="date"] {
     padding: 10px;
     border-radius: 5px;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9; 
     border: 1px solid #ccc;
     cursor: pointer;
 }
@@ -174,4 +174,10 @@ input[type="date"] {
     .top-menu ul, .section-title {
         text-align: center;
     }
+}
+
+address {
+    margin-top: 15px;
+    font-style: normal; 
+    line-height: 1.5; 
 }
