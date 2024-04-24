@@ -206,7 +206,7 @@ input[type="checkbox"] {
 }
 
 #Brainstorm li {
-    background: color(display-p3 0.898 0.976 1); 
+    background: #E5F8FF;
     margin-bottom: 10px;
     padding: 10px 15px;
     border-radius: 8px;
@@ -219,7 +219,7 @@ input[type="checkbox"] {
 }
 
 #Brainstorm a {
-    color: #007BFF;
+    color: color(display-p3 0.012 0.485 1);
     font-weight: bold;
     text-decoration: none;
 }
@@ -335,7 +335,7 @@ a:hover {
 }
 
 .gallery-container ~ .comments-container {
-    margin-bottom: 20;
+    margin-bottom: 0;
 }
 
 address {
